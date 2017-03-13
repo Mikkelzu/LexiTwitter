@@ -27,5 +27,10 @@ namespace LexiTwitter
             InitializeComponent();
             a.Authenticate(this);
         }
+
+        private void ButtonSendTweet_Click(object sender, RoutedEventArgs e)
+        {
+            a.SendTweet(TextBoxNewTweet.Text);
+        }
     }
 }

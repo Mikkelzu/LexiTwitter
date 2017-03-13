@@ -21,5 +21,14 @@ namespace LexiTwitter.Twitter
                 win.textboxforusers.AppendText(tweet.User.ScreenName + "\n");
             }
         }
+
+        public void SendTweet(string status)
+        {
+
+            var service = new TwitterService(AuthTokens.ConsumerKey, AuthTokens.ConsumerSecret);
+            service.AuthenticateWith(AuthTokens.AccessToken, AuthTokens.AccessTokenSecret);
+
+            service.SendTweet(new SendTweetOptions { Status = status });
+        }
     }
 }

@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <RichTextBox x:Name="textboxforusers" HorizontalAlignment="Left" Height="215" Margin="28,38,0,0" VerticalAlignment="Top" Width="357">
+        <RichTextBox x:Name="textboxforusers" HorizontalAlignment="Left" Height="83" Margin="28,38,0,0" VerticalAlignment="Top" Width="173">
             <FlowDocument>
                 <Paragraph>
                     <Run Text=""/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <TextBox x:Name="TextBoxNewTweet" HorizontalAlignment="Left" Height="23" Margin="236,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ButtonSendTweet" Content="SendTweet!" HorizontalAlignment="Left" Margin="377,52,0,0" VerticalAlignment="Top" Width="75" Click="ButtonSendTweet_Click"/>
 
     </Grid>
 </Window>
