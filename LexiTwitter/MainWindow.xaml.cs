@@ -32,5 +32,10 @@ namespace LexiTwitter
         {
             a.SendTweet(TextBoxNewTweet.Text);
         }
+
+        private void ButtonReTweet_Click(object sender, RoutedEventArgs e)
+        {
+            a.RetweetTweet(844307660354850816); //this id 844307660354850816 links to a tweet made by the bot. 
+        }
     }
 }

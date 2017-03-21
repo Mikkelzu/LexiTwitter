@@ -16,6 +16,7 @@
         </RichTextBox>
         <TextBox x:Name="TextBoxNewTweet" HorizontalAlignment="Left" Height="23" Margin="236,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="ButtonSendTweet" Content="SendTweet!" HorizontalAlignment="Left" Margin="377,52,0,0" VerticalAlignment="Top" Width="75" Click="ButtonSendTweet_Click"/>
+        <Button x:Name="ButtonReTweet" Content="Retweet" HorizontalAlignment="Left" Margin="377,101,0,0" VerticalAlignment="Top" Width="75" Click="ButtonReTweet_Click"/>
 
     </Grid>
 </Window>
