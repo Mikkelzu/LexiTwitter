@@ -9,24 +9,16 @@ namespace LexiTwitter.Twitter
 {
     public class Auth
     {
-        Tokens AuthTokens = new Tokens();
-
         public void Authenticate(MainWindow win)
         {
-            var service = new TwitterService(AuthTokens.ConsumerKey, AuthTokens.ConsumerSecret);
-            service.AuthenticateWith(AuthTokens.AccessToken, AuthTokens.AccessTokenSecret);
-
-            var tweets = service.ListTweetsOnHomeTimeline(new ListTweetsOnHomeTimelineOptions());
-            foreach (var tweet in tweets)
-            {
-                win.textboxforusers.AppendText(tweet.User.ScreenName + "\n");
-            }
+            var service = new TwitterService(Tokens.KEY, Tokens.SECRET);
+            service.AuthenticateWith(Tokens.TOKEN, Tokens.TOKEN_SECRET);
         }
 
         public void SendTweet(string status)
         {
-            Authentication a = new Authentication(new TwitterService(AuthTokens.ConsumerKey, AuthTokens.ConsumerSecret));
-            a.Service.AuthenticateWith(AuthTokens.AccessToken, AuthTokens.AccessTokenSecret);
+            Authentication a = new Authentication(new TwitterService(Tokens.KEY, Tokens.SECRET));
+            a.Service.AuthenticateWith(Tokens.TOKEN, Tokens.TOKEN_SECRET);
 
             a.Service.SendTweet(new SendTweetOptions { Status = status });
         }
@@ -36,21 +28,37 @@ namespace LexiTwitter.Twitter
         /// </summary>
         public void RetweetTweet(long tweetid)
         {
-            Authentication a = new Authentication(new TwitterService(AuthTokens.ConsumerKey, AuthTokens.ConsumerSecret));
-            a.Service.AuthenticateWith(AuthTokens.AccessToken, AuthTokens.AccessTokenSecret);
+            Authentication a = new Authentication(new TwitterService(Tokens.KEY, Tokens.SECRET));
+            a.Service.AuthenticateWith(Tokens.TOKEN, Tokens.TOKEN_SECRET);
 
             a.Service.Retweet(new RetweetOptions { Id = tweetid, TrimUser = false });
         }
 
-    
+        /// <summary>
+        /// returns a IEnumerable<> list of tweets with the Hashtag we "filter" with.
+        /// </summary>
+        /// <param name="hash"></param>
+        /// <returns></returns>
+        public IEnumerable<TwitterStatus> GetHashtaggedTweet(string hash)
+        {
+            Authentication a = new Authentication(new TwitterService(Tokens.KEY, Tokens.SECRET));
+
+            a.Service.AuthenticateWith(Tokens.TOKEN, Tokens.TOKEN_SECRET);
+
+            TwitterSearchResult tweets = a.Service.Search(new SearchOptions { Q = hash, SinceId = 29999});
+
+            IEnumerable<TwitterStatus> status = tweets.Statuses;
+
+            return status;
+        }
     }
 
     class Authentication
     {
         Tokens AuthTokens = new Tokens();
 
-        //public TwitterService service = new TwitterService(AuthTokens.ConsumerKey, AuthTokens.ConsumerSecret);
-        //service.AuthenticateWith(AuthTokens.AccessToken, AuthTokens.AccessTokenSecret);
+        //public TwitterService service = new TwitterService(Tokens.KEY, Tokens.SECRET);
+        //service.AuthenticateWith(Tokens.TOKEN, Tokens.TOKEN_SECRET);
 
         public TwitterService Service { get; set; }
 

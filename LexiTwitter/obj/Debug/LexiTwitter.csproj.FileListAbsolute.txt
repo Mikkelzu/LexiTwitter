@@ -30,3 +30,35 @@ F:\SWDEV\c#\Lexi Twitter\LexiTwitter\LexiTwitter\bin\Debug\Newtonsoft.Json.xml
 F:\SWDEV\c#\Lexi Twitter\LexiTwitter\LexiTwitter\bin\Debug\System.Net.Http.Extensions.xml
 F:\SWDEV\c#\Lexi Twitter\LexiTwitter\LexiTwitter\bin\Debug\System.Net.Http.Primitives.xml
 F:\SWDEV\c#\Lexi Twitter\LexiTwitter\LexiTwitter\bin\Debug\TweetSharp.pdb
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\App.g.cs
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter_MarkupCompile.cache
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter_MarkupCompile.lref
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter.exe
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter.pdb
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\LexiTwitter.exe.config
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\LexiTwitter.exe
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\LexiTwitter.pdb
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Autofac.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Hammock.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\TweetSharp.dll
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Autofac.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Hammock.pdb
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\bin\Debug\TweetSharp.pdb
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\MainWindow.baml
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter.g.resources
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter.Properties.Resources.resources
+C:\Users\Admin\Documents\LexiTwitter\LexiTwitter\obj\Debug\LexiTwitter.csproj.GenerateResource.Cache

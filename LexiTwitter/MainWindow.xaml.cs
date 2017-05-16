@@ -16,6 +16,15 @@ using LexiTwitter.Twitter;
 
 namespace LexiTwitter
 {
+
+    public class TweetData
+    {
+        public long ID { get; set; }
+        public string Author { get; set; }
+        public string Tweet { get; set; }
+    }
+
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -26,6 +35,17 @@ namespace LexiTwitter
         {
             InitializeComponent();
             a.Authenticate(this);
+
+            foreach (var item in a.GetHashtaggedTweet("#emberofdreamsgaming"))
+            {
+                TweetData data = new TweetData();
+
+                data.ID = item.Id;
+                data.Author = item.Author.ScreenName;
+                data.Tweet = item.Text;
+
+                viewtweets.Items.Add(data);
+            }
         }
 
         private void ButtonSendTweet_Click(object sender, RoutedEventArgs e)
@@ -35,7 +55,9 @@ namespace LexiTwitter
 
         private void ButtonReTweet_Click(object sender, RoutedEventArgs e)
         {
-            a.RetweetTweet(844307660354850816); //this id 844307660354850816 links to a tweet made by the bot. 
+            long tweetid = (long)viewtweets.SelectedItems[0];
+
+            a.RetweetTweet(tweetid);
         }
     }
 }
